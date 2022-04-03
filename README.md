@@ -2,7 +2,7 @@
 
 ## اهـلا بـك
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/JMTHON-AR/pack)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SALEM9/pack)
 
 ## شكـرا لكـم 
 
@@ -10,4 +10,4 @@
 this userbot is import of catuserbot and translate to arabic
 
 https://t.me/catuserbot_support
-https://t.me/jmthon
+https://t.me/salem_400
