@@ -1,1 +1,1 @@
-worker: bash jmthon
+worker: bash salem
