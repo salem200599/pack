@@ -3,10 +3,10 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "jmthonar" ]]
+    if [[ $UPSTREAM_REPO == "SALEM9" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL2ptdGhvbmFyL3VzZXJib3QvYXJjaGl2ZS9tYXN0ZXIuemlw=" | base64 -d
-    elif [[ $UPSTREAM_REPO == "jmthonar" ]]
+    elif [[ $UPSTREAM_REPO == "SALEM9" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL2ptdGhvbmFyL3VzZXJib3QvYXJjaGl2ZS9tYXN0ZXIuemlw=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -25,8 +25,8 @@ _get_repolink () {
 
 _setting_bot () {
     local zippath
-    zippath="JmthonBot.zip"
-    echo "  يتم تحميل ملفات سورس جمثون ..."
+    zippath="salembot.zip"
+    echo "  يتم تحميل ملفات سورس سالم ..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  فك بيانات السورس ..."
     JMTHONPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
@@ -36,7 +36,7 @@ _setting_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $JMTHONPATH
-    echo "    بدء بوت جمثون    "
+    echo "    بدء بوت سالم    "
     echo "
                        
 ╋╋╋╋╋┏┓┏┓
